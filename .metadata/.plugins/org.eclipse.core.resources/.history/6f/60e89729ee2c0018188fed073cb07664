@@ -1,0 +1,41 @@
+import java.awt.BorderLayout;
+import java.awt.Component;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+import javax.swing.JFrame;
+
+import org.cef.CefApp;
+import org.cef.CefClient;
+import org.cef.OS;
+import org.cef.browser.CefBrowser;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CefApp cefApp = CefApp.getInstance();
+		CefClient client = cefApp.createClient();
+		CefBrowser browser = client.createBrowser("http://www.google.com",
+				OS.isLinux(), false);
+		Component browserUI = browser.getUIComponent();
+		// Create a new frame for holding the browser ui
+		JFrame mainFrame = new JFrame();
+		// Add the browser ui to this newly created frame
+		mainFrame.getContentPane().add(browserUI, BorderLayout.CENTER);
+		// Show frame
+		mainFrame.setSize(800, 600);
+		mainFrame.setVisible(true);
+
+		mainFrame.addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosing(WindowEvent e) {
+				mainFrame.dispose();
+				cefApp.dispose();
+				// Alternative: CefApp.getInstance().dispose();
+			}
+		});
+
+	}
+
+}

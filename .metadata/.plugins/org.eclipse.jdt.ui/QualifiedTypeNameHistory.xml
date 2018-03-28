@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.cef.browser.CefBrowserWindow"/>
+<fullyQualifiedTypeName name="org.cef.browser.CefBrowser"/>
+<fullyQualifiedTypeName name="org.cef.CefApp"/>
+<fullyQualifiedTypeName name="java.awt.event.WindowEvent"/>
+<fullyQualifiedTypeName name="java.awt.event.WindowAdapter"/>
+</qualifiedTypeNameHistroy>

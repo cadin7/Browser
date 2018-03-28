@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;jcef-None@program&apos;" deleteContents="false" description="Delete resource &apos;jcef-None@program&apos;" element1="/jcef-None@program" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1521024812561"/>
+</session>
